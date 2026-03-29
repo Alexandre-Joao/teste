@@ -5,7 +5,7 @@ github:
   is_project_page: false
 future: true
 timezone: America/Sao_Paulo
-
+baseurl: "/teste"
 collections:
   seminars:
     output: true
