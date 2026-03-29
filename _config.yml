@@ -14,7 +14,8 @@ collections:
   bibliography:
     output: false
   notes:
-    output: true  
+    output: true 
+    permalink: /notes/:path/
 defaults:
   - scope:
       path: ""
