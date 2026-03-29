@@ -6,8 +6,8 @@ layout: default
   {% assign todas_notas = site.notes | sort: 'title' %}
   {% for nota in todas_notas %}
     <li>
-      <a href="{{ 'What-is-Mathematical-Physics.md' | relative_url }}">{{ What is Mathematical Physics? }}</a>
-      <p>{{ Trying to define what is this area }}</p>
+      <a href="{{ nota.url }}">{{ nota.title }}</a>
+      <p>{{ nota.description }}</p>
     </li>
   {% endfor %}
 </ul>
