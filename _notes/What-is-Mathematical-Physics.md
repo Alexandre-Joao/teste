@@ -5,6 +5,7 @@ title: "What is Mathematical Physics?"
 testestestestestestestestestestestsetestestestestestestestestestestestestestestestestestestestestestestestestestes
 
 Nesta aula vimos que a derivada de $f(x) = x^2$ é:
+
 $$f'(x) = 2x$$
 
 Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin Testing margin
