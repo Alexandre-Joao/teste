@@ -1,16 +1,13 @@
 ---
 layout: default
 title: "Down with the Dirac Delta"
-author: "João Macedo"
-author_email: "joaomacedocabral@fisica.ufc.br"
-date: 2026-04-10
 ---
 
 Many texts in physics naively define the Dirac delta function $\delta:\mathbb{R}\to\mathbb{R}$ as
 
 $$ \delta(x)=\begin{cases} \infty,\text{ if }x=0\\ 0,\text{ if }x\neq0 \end{cases}. $$
 
-However, $\infty\notin\mathbb{R}$, so this rule does not defines a function properly. To remedy this, many texts, such as Butkov, states that the Dirac delta must be thought as symbol, that only makes sense inside an integral, for which
+However, $\infty\notin\mathbb{R}$, so this rule does not defines a function properly. To remedy this, some references, such as Butkov, states that the Dirac delta must be thought as symbol, that only makes sense inside an integral, for which
 
 $$ \int_\mathbb{R}\delta(x)\:dx = 1, $$
 
@@ -22,6 +19,4 @@ We may also interpret this symbol as a limit of a sequence of functions. Such se
 
 $$ f_n(x)=\frac{n}{\sqrt{\pi}}e^{-n^2x^2}. $$
 
-The integral of these function are well known:
-
-$$ \int_\mathbb{R}f_n(x)=\frac{n}{\sqrt{\pi}}\int_{\mathbb{R}}e^{-n^2x^2}\:dx=1. $$
+However, this approach need a more careful treatment. For instance, we need to establish the topology in which the limit is taken.
