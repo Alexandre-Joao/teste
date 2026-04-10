@@ -8,6 +8,18 @@ Many texts in physics naively define the Dirac delta function $\delta:\mathbb{R}
 
 $$ \delta(x)=\begin{cases} \infty,\text{ if }x=0\\ 0,\text{ if }x\neq0 \end{cases}. $$
 
-However, $\infty\notin\mathbb{R}$, so this rule does not defines a function properly. To remedy this, many texts, such as Butkov, states that the Dirac delta must be thought as the limit of a sequence of functions. Such sequences are called as delta sequences. For instance, consider the sequence $(f_n)$ of functions $f_n:\mathbb{R}\to\mathbb{R}$ given by
+However, $\infty\notin\mathbb{R}$, so this rule does not defines a function properly. To remedy this, many texts, such as Butkov, states that the Dirac delta must be thought as symbol, that only makes sense inside an integral, for which
+
+$$ \int_\mathbb{R}\delta(x)\:dx = 1, $$
+
+and, for any continuous function $f:\mathbb{R}\to\mathbb{R}$,
+
+$$ \int_\mathbb{R}f(x)\delta(x)\:dx = f(0). $$
+
+We may also interpret this symbol as a limit of a sequence of functions. Such sequences are called as delta sequences. For instance, consider the sequence $(f_n)$ of gaussian functions $f_n:\mathbb{R}\to\mathbb{R}$ given by
 
 $$ f_n(x)=\frac{n}{\sqrt{\pi}}e^{-n^2x^2}. $$
+
+The integral of these function are well known:
+
+$$ \int_\mathbb{R}f_n(x)=\frac{n}{\sqrt{\pi}}\int_{\mathbb{R}}e^{-n^2x^2}\:dx=1. $$
