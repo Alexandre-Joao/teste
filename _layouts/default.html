@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}"> -->
     {% seo %}
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}"><!-- CSS -->
-
     <!-- Scripts -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     
@@ -19,29 +17,20 @@
           inlineMath: [['$', '$'], ['\\(', '\\)']],
           displayMath: [['$$', '$$'], ['\\[', '\\]']],
           tags: 'ams'
-        },
-        chtml: {
-          mtextInheritFont: true,
-        }
-        output: {
-          font: 'mathjax-stix2' // Example: switching to STIX2
         }
       };
     </script>
     <script id="MathJax-script" async
-      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js">
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     </script>
-
     <!-- Mobile Hamburger Toggle -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const navToggle = document.getElementById('nav-toggle');
         const navList = document.querySelector('.nav-list');
-
         navToggle.addEventListener('click', () => {
           navList.classList.toggle('show');
         });
-
         document.querySelectorAll('.parent-toggle').forEach(toggle => {
           toggle.addEventListener('click', (e) => {
             e.preventDefault();
@@ -51,7 +40,6 @@
       });
     </script>
   </head>
-
   <body>
     <!-- Navigation -->
     <nav id="Menu">
@@ -59,7 +47,6 @@
       <ul class="nav-list">
         <!--<li><a href="{{ '/' | relative_url}}">Home</a></li>-->
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
-
         <li class="dropdown">
           <a href="#" class="parent-toggle">Content</a>
           <ul class="dropdown-content">
@@ -68,11 +55,9 @@
             <li><a href="{{'/past' | relative_url }}">Discussions</a></li>
           </ul>
         <!--</li>-->
-
         <li><a href="{{ '/suggestions' | relative_url }}">About</a></li>
       </ul>
     </nav>
-
     <!-- Main Content -->
     <div class="wrapper">
       <section>
@@ -85,7 +70,6 @@
         </div>
         
         {{ content }}
-
       </section>
     </div>
   </body>
