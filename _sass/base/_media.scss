@@ -4,61 +4,45 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/* ====================== ABOUT PAGE - FOTO CIRCULAR ====================== */
+/* ====================== ABOUT - SIMPLES ====================== */
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
-  align-items: center;
-  margin-top: 2rem;
-  padding: 2rem 0;
+.about-section {
+  max-width: 700px;           /* limita a largura para ficar bonito */
+  margin: 3rem auto;          /* centraliza na página */
+  text-align: center;         /* centraliza foto e texto */
 }
 
-.about-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 1.2rem;
-  color: #ddd;
-}
-
-/* Foto circular com borda branca grossa */
 .about-photo {
-  flex: 0 0 auto;           /* não cresce nem encolhe */
-  display: flex;
-  justify-content: center;
+  margin-bottom: 2.5rem;
 }
 
 .about-photo img {
-  width: 320px;             /* tamanho da foto (pode mudar) */
-  height: 320px;
-  object-fit: cover;        /* corta sem distorcer */
-  border-radius: 50%;       /* faz o círculo perfeito */
-  border: 12px solid #ffffff;   /* borda branca grossa (igual sua imagem de exemplo) */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);  /* sombra para destacar */
-  transition: transform 0.3s ease;
+  width: 280px;               /* tamanho da foto */
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;         /* círculo perfeito */
+  border: 10px solid #ffffff; /* borda branca grossa */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
-.about-photo img:hover {
-  transform: scale(1.04);   /* leve zoom ao passar o mouse */
+.about-text {
+  color: #ddd;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  text-align: left;           /* texto justificado à esquerda (mais confortável de ler) */
+  max-width: 680px;
+  margin: 0 auto;             /* centraliza o bloco de texto */
 }
 
-/* Responsivo: em celular a foto vai para baixo */
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 2.5rem;
-  }
-  
+.about-text p {
+  margin-bottom: 1.4rem;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
   .about-photo img {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
 }
 
