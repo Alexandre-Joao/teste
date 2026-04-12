@@ -4,7 +4,7 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/* ====================== ABOUT PAGE ====================== */
+/* ====================== ABOUT PAGE - FOTO CIRCULAR ====================== */
 
 .about-container {
   display: flex;
@@ -27,34 +27,33 @@ img {
   color: #ddd;
 }
 
+/* Foto circular com borda branca grossa */
 .about-photo {
-  flex: 1;
-  min-width: 280px;
+  flex: 0 0 auto;           /* não cresce nem encolhe */
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .about-photo img {
-  width: 320px;           /* tamanho da foto */
+  width: 320px;             /* tamanho da foto (pode mudar) */
   height: 320px;
-  object-fit: cover;      /* mantém proporção e preenche o círculo */
-  border-radius: 50%;     /* deixa a foto redonda */
-  border: 8px solid #333; /* borda escura (pode mudar a cor) */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  object-fit: cover;        /* corta sem distorcer */
+  border-radius: 50%;       /* faz o círculo perfeito */
+  border: 12px solid #ffffff;   /* borda branca grossa (igual sua imagem de exemplo) */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);  /* sombra para destacar */
   transition: transform 0.3s ease;
 }
 
 .about-photo img:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);   /* leve zoom ao passar o mouse */
 }
 
-/* Responsivo - quando a tela for pequena, a foto vai para baixo */
+/* Responsivo: em celular a foto vai para baixo */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    gap: 2rem;
     text-align: center;
+    gap: 2.5rem;
   }
   
   .about-photo img {
