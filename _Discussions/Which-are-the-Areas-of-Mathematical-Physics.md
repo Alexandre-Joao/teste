@@ -1,25 +1,41 @@
 ---
 layout: default
 title: "Which are the Areas of Mathematical Physics?"
-Author:
-    - name: Alexandre Mendonça Rodrigues
-      website: (sem link ainda)
-      orcid: (dps coloca)
-      date: 2026-04-12
-bibliography: 
-    - (ver como colocar referências)
-    - lima2010awakingvacuumrelativistic
+date: 2026-04-12
+author: "Alexandre"
+author_url: "https://orcid.org/0009-0007-0034-5243"  
 ---
 
-<div style="margin: 2rem 0 3rem 0;">
-  <h1 style="margin-bottom: 0.4rem;">{{ page.title }}</h1>
-  
-  <p style="color: #aaa; font-size: 1.1rem; margin: 0.2rem 0 1.2rem 0;">
+<!-- Capinha estilo artigo (igual ao exemplo que você mostrou) -->
+<div style="margin-top: 40px; margin-bottom: 50px;">
+
+  <h1 style="font-size: 2.6rem; margin-bottom: 12px; color: #ffffff;">
+    {{ page.title }}
+  </h1>
+
+  <div style="color: #aaaaaa; font-size: 1.15rem; margin-bottom: 8px;">
     {{ page.date | date: "%d %b %Y" }}
-  </p>
-  
-  <p style="color: #f4c430; font-size: 1.35rem; font-weight: 500; margin: 0;">
+  </div>
+
+  {% if page.author_url %}
+  <div style="color: #f4c430; font-size: 1.4rem; font-weight: 500;">
+    <a href="{{ page.author_url }}" target="_blank" rel="noopener" style="color: #f4c430; text-decoration: none;">
+      {{ page.author }}
+    </a>
+  </div>
+  {% else %}
+  <div style="color: #f4c430; font-size: 1.4rem; font-weight: 500;">
     {{ page.author }}
-  </p>
+  </div>
+  {% endif %}
+
 </div>
-(Essa página é um teste)
+
+<!-- === Seu conteúdo da página começa aqui === -->
+<p>Esta página é um teste.</p>
+
+<p>Aqui você pode começar a escrever o conteúdo da nota normalmente.</p>
+
+<p>Exemplo de equação:</p>
+
+$$ f'(x) = 2x $$
