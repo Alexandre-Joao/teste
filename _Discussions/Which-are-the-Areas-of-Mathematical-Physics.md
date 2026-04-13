@@ -6,8 +6,7 @@ author: "Alexandre Mendonça"
 author_url: "https://orcid.org/0009-0007-0034-5243"  
 ---
 
-<!-- Capinha estilo artigo (igual ao exemplo que você mostrou) -->
-<div style="margin-top: 40px; margin-bottom: 50px;">
+<div style="margin-top: 40px; margin-bottom: 50px; max-width: 780px;">
 
   <h1 style="font-size: 2.6rem; margin-bottom: 12px; color: #ffffff;">
     {{ page.title }}
@@ -30,6 +29,14 @@ author_url: "https://orcid.org/0009-0007-0034-5243"
   {% endif %}
 
 </div>
+
+<!-- Conteúdo principal no estilo de paper (largura limitada + texto justificado) -->
+<div style="max-width: 780px; 
+            margin: 0 auto; 
+            line-height: 1.78; 
+            font-size: 1.09rem; 
+            text-align: justify;
+            hyphens: auto;">
 
 <!-- === Seu conteúdo da página começa aqui === -->
 <p>Esta página é um teste.</p>
