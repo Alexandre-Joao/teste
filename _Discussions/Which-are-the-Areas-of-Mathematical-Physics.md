@@ -10,23 +10,7 @@ bibliography:
     - (ver como colocar referências)
     - lima2010awakingvacuumrelativistic
 ---
-<!--
-<div class="page-header">
-  <h1>{{ page.title }}</h1>
-  
-  {% if page.date %}
-  <div class="page-date">
-    {{ page.date | date: "%d %b %Y" }}
-  </div>
-  {% endif %}
-  
-  {% if page.author %}
-  <div class="page-author">
-    {{ page.author }}
-  </div>
-  {% endif %}
-</div>
--->
+
 <div style="margin: 2rem 0 3rem 0;">
   <h1 style="margin-bottom: 0.4rem;">{{ page.title }}</h1>
   
